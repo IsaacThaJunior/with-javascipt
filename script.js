@@ -32,7 +32,7 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
 
         document.querySelector(`body`).style.backgroundColor = `#60b347`;
 
-         document.querySelector(`.number`).style.width = `30rem`;
+         document.querySelector(`.number`).style.width = `20rem`;
 
          if(score > highScore) {
              highScore = score;
@@ -53,7 +53,7 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
 
 });
 
-document.querySelector(`#again`).addEventListener(`click`, function () {
+document.querySelector(`.again`).addEventListener(`click`, function () {
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     displayMessage( `Start guessing...`);
